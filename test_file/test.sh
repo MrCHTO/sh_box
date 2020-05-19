@@ -13,7 +13,7 @@ echo "test is ${test1}"
 echo "test length is ${#test1}"
 read test1
 echo "test is ${test1}" >> test_file
-echo "test length is ${#test1}" >> test_file
+echo "test length is ${#test1}" >> test
 test2=(1 3 5 7 9 2 4 6 8 0)
 for((i=0;i<10;i++))
 do
