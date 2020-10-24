@@ -1,4 +1,4 @@
-#usr/bin/bash
+#!/bin/bash
 echo "please input number :"
 read num
 int_i=0
