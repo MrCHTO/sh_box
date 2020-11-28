@@ -3,10 +3,7 @@ echo "请 选 择 你 需 要 的 服 务"
 echo "（1）数 据 库 服 务"
 echo "（2）代 码 仓 库 服 务"
 echo "（3）大 数 据 服 务"
-echo "（0）退 出"
 read n
-while (( $n -ne 0 ))
-do
     if [ $n -eq 1 ]
     then
         echo "（1）启动 本地 MYSQL 数据库 服务"
@@ -182,4 +179,3 @@ do
     else
 	    echo "错误，请重试！"
     fi
-done
