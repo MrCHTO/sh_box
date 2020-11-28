@@ -154,20 +154,28 @@ do
         read c
         if [ $c -eq 1 ]
         then
+            echo "（1）启动 HDFS文件系统 服务"
         elif [ $c -eq 2 ]
         then
+            echo "（2）启动 YARN框架 服务"
         elif [ $c -eq 3 ]
         then
+            echo "（3）启动 SPARK计算引擎 服务"
         elif [ $c -eq 4 ]
         then
+            echo "（4）启动 ZOOKEEPER 协同服务系统"
         elif [ $c -eq 5 ]
         then
+            echo "（5）关闭 HDFS文件系统 服务"
         elif [ $c -eq 6 ]
         then
+            echo "（6）关闭 YARN框架 服务"
         elif [ $c -eq 7 ]
         then
+            echo "（7）关闭 SPARK计算引擎 服务"
         elif [ $c -eq 8 ]
         then
+            echo "（8）关闭 ZOOKEEPER 协同服务系统"
         else
             echo "错误，请重试！"
         fi
