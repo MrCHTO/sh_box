@@ -40,16 +40,46 @@ do
             sh stop-hbase
         elif [ $a -eq 5 ]
         then
+            z=1
             echo "正在进入本地数据库_ROOT..."
     	    cd /usr/local/mysql/support-files
             sh mysql.server start
 	        mysql -u root -p
+            if [ $z -eq 1 ]
+            then
+                echo "是否关闭本地MYSQL服务？[1/0]"
+	            read y
+	            if [ $y -eq 1 ]
+	            then
+	            	sh /usr/local/mysql/support-files/mysql.server stop
+	            elif [ $y -eq 0 ]
+	            then
+	            	echo "MYSQL服务后台运行中..."
+	            else
+	            	echo "MYSQL服务后台运行中..."
+	            fi
+            fi
         elif [ $a -eq 6 ]
         then
+            z=1
             echo "正在进入本地数据库_USER..."
         	cd /usr/local/mysql/support-files
             sh mysql.server start
         	mysql -u user -p
+            if [ $z -eq 1 ]
+            then
+                echo "是否关闭本地MYSQL服务？[1/0]"
+	            read y
+	            if [ $y -eq 1 ]
+	            then
+	            	sh /usr/local/mysql/support-files/mysql.server stop
+	            elif [ $y -eq 0 ]
+	            then
+	            	echo "MYSQL服务后台运行中..."
+	            else
+	            	echo "MYSQL服务后台运行中..."
+	            fi
+            fi
         elif [ $a -eq 7 ]
         then
             echo "正在进入RDS-数据库_ROOT..."
@@ -72,16 +102,42 @@ do
         read b
         if [ $b -eq 1 ]
         then
+            echo "正在拉取all..."
+        	cd /usr/GitBox/c_box
+        	git pull Github master
+        	cd /usr/GitBox/cpp_box
+        	git pull Github master
+        	cd /usr/GitBox/java_box
+        	git pull Github master
+        	cd /usr/GitBox/py_box
+        	git pull Github master
+        	cd /usr/GitBox/sh_box
+        	git pull Github master
         elif [ $b -eq 2 ]
         then
+            echo "正在拉取c_box..."
+	        cd /usr/GitBox/c_box
+        	git pull Github master
         elif [ $b -eq 3 ]
         then
+            echo "正在拉取cpp_box..."
+          	cd /usr/GitBox/cpp_box
+        	git pull Github master
         elif [ $b -eq 4 ]
         then
+            echo "正在拉取java_box..."
+        	cd /usr/GitBox/java_box
+        	git pull Github master
         elif [ $b -eq 5 ]
         then
+            echo "正在拉取py_box..."
+	        cd /usr/GitBox/py_box
+	        git pull Github master
         elif [ $b -eq 6 ]
         then
+            echo "正在拉取sh_box..."
+	        cd /usr/GitBox/sh_box
+	        git pull Github master
         else
             echo "错误，请重试！"
         fi
