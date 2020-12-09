@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "-----------------------------------------"
-echo -e "| 序号\t| 类型\t| 用户名\t| 备注\t\t|"
+echo -e "| 序号\t| 类型\t| 用户名\t| 备注\t\t\t|"
 echo -e "| 1\t| 本地\t| ROOT\t\t| 管理员\t\t|"
-echo -e "| 2\t| 本地\t| USER\t\t| 用户\t\t|"
+echo -e "| 2\t| 本地\t| USER\t\t| 用户\t\t\t|"
 echo -e "| 3\t| 本地\t| WORKPRESSUSER\t| workpress管理员\t|"
-echo -e "| 4\t| 本地\t| HIVEUSER\t| hive管理员\t|"
+echo -e "| 4\t| 本地\t| HIVEUSER\t| hive管理员\t\t|"
 echo -e "| 5\t| RDS\t| RDS_ROOT\t| 管理员\t\t|"
-echo -e "| 6\t| RDS\t| RDS_USER\t| 用户\t\t|"
+echo -e "| 6\t| RDS\t| RDS_USER\t| 用户\t\t\t|"
 echo "-----------------------------------------"
 read n
 if [ $n -eq 1 ]; then
