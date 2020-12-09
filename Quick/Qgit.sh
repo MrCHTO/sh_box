@@ -11,40 +11,40 @@ if [ $n -eq 0 ]
 then
 	echo "正在拉取all..."
 	cd /usr/local/GitBox/c_box
-	git pull Github master
+	git pull GitHub master
 	cd /usr/local/GitBox/cpp_box
-	git pull Github master
+	git pull GitHub master
 	cd /usr/local/GitBox/java_box
-	git pull Github master
+	git pull GitHub master
 	cd /usr/local/GitBox/py_box
-	git pull Github master
+	git pull GitHub master
 	cd /usr/local/GitBox/sh_box
-	git pull Github master
+	git pull GitHub master
 elif [ $n -eq 1 ]
 then
 	echo "正在拉取c_box..."
 	cd /usr/local/GitBox/c_box
-	git pull Github master
+	git pull GitHub master
 elif [ $n -eq 2 ]
 then
 	echo "正在拉取cpp_box..."
 	cd /usr/local/GitBox/cpp_box
-	git pull Github master
+	git pull GitHub master
 elif [ $n -eq 3 ]
 then
 	echo "正在拉取java_box..."
 	cd /usr/local/GitBox/java_box
-	git pull Github master
+	git pull GitHub master
 elif [ $n -eq 4 ]                                                                               
 then  
 	echo "正在拉取py_box..."
 	cd /usr/local/GitBox/py_box
-	git pull Github master
+	git pull GitHub master
 elif [ $n -eq 5 ]                                                                               
 then  
 	echo "正在拉取sh_box..."
 	cd /usr/local/GitBox/sh_box
-	git pull Github master
+	git pull GitHub master
 else
 	echo "错误，请重试！"
 fi
