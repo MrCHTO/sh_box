@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "---------------------------------------------------------"
-echo -e "| 序号\t| 仓库\t| 备注\t\t\t|"
-echo -e "| 1\t| 全部\t| 所有仓库\t|"
-echo -e "| 2\t| C_BOX\t| C仓库t|"
+echo "-----------------------------------------"
+echo -e "| 序号\t| 仓库\t\t| 备注\t\t|"
+echo -e "| 1\t| 全部\t\t| 所有仓库\t|"
+echo -e "| 2\t| C_BOX\t\t| C仓库\t\t|"
 echo -e "| 3\t| CPP_BOX\t| C++仓库\t|"
 echo -e "| 4\t| JAVA_BOX\t| JAVA仓库\t|"
 echo -e "| 5\t| PY_BOX\t| PYTHON仓库\t|"
