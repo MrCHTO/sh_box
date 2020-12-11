@@ -1,14 +1,16 @@
 #!/bin/bash
-echo "请选择你要拉取的代码仓库"
-echo "(0)pull-all"
-echo "(1)c_box"
-echo "(2)cpp_box"
-echo "(3)java_box"
-echo "(4)py_box"
-echo "(5)sh_box"
+echo "---------------------------------------------------------"
+echo -e "| 序号\t| 仓库\t| 备注\t\t\t|"
+echo -e "| 1\t| 全部\t| 所有仓库\t|"
+echo -e "| 2\t| C_BOX\t| C仓库t|"
+echo -e "| 3\t| CPP_BOX\t| C++仓库\t|"
+echo -e "| 4\t| JAVA_BOX\t| JAVA仓库\t|"
+echo -e "| 5\t| PY_BOX\t| PYTHON仓库\t|"
+echo -e "| 6\t| SH_BOX\t| SHELL仓库\t|"
+echo "---------------------------------------------------------"
 read n
-if [ $n -eq 0 ]; then
-	echo "正在拉取all..."
+if [ $n -eq 1 ]; then
+	echo -e ""
 	cd /usr/local/GitBox/c_box
 	git pull GitHub master
 	cd /usr/local/GitBox/cpp_box
@@ -19,24 +21,24 @@ if [ $n -eq 0 ]; then
 	git pull GitHub master
 	cd /usr/local/GitBox/sh_box
 	git pull GitHub master
-elif [ $n -eq 1 ]; then
-	echo "正在拉取c_box..."
+elif [ $n -eq 2 ]; then
+	echo -e ""
 	cd /usr/local/GitBox/c_box
 	git pull GitHub master
-elif [ $n -eq 2 ]; then
-	echo "正在拉取cpp_box..."
+elif [ $n -eq 3 ]; then
+	echo -e ""
 	cd /usr/local/GitBox/cpp_box
 	git pull GitHub master
-elif [ $n -eq 3 ]; then
-	echo "正在拉取java_box..."
+elif [ $n -eq 4 ]; then
+	echo -e ""
 	cd /usr/local/GitBox/java_box
 	git pull GitHub master
-elif [ $n -eq 4 ]; then
-	echo "正在拉取py_box..."
+elif [ $n -eq 5 ]; then
+	echo -e ""
 	cd /usr/local/GitBox/py_box
 	git pull GitHub master
-elif [ $n -eq 5 ]; then
-	echo "正在拉取sh_box..."
+elif [ $n -eq 6 ]; then
+	echo -e ""
 	cd /usr/local/GitBox/sh_box
 	git pull GitHub master
 else
